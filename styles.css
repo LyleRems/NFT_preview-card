@@ -1,0 +1,177 @@
+/*--Global CSS variables--*/
+
+:root{
+/*COLORS*/
+
+    /*primary*/
+    --s-blue: hsl(215, 51%, 70%);
+    --cyan:  hsl(178, 100%, 50%);
+
+    --dkbluem: hsl(217, 54%, 11%); /*main bg*/
+    --dkbluec: hsl(216, 50%, 16%); /*card bg*/
+    --dkbluel: hsl(215, 32%, 27%); /*line*/
+    --white: hsl(0, 0%, 100%);
+
+}
+/*---------Fonts----------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    text-decoration:none;
+    background-color: var(--dkbluem);
+     
+    
+}
+a{
+    list-style: none;
+    text-decoration: none;
+}
+h1{
+    font-family: 'Outfit', sans-serif;
+    color: var(--white);
+    font-size: 1.35rem;
+    font-weight: 500;
+    padding: 20px 0 17px;
+}
+h2{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Outfit', sans-serif;
+}
+p{
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Outfit', sans-serif;
+    color: hsl(215, 51%, 70%);
+    line-height: 1.5;
+    letter-spacing: .26px;
+
+}
+span{
+    color: var(--white);
+    font-weight: 300;
+}
+span:hover{
+    transition: 1s;
+    color: var(--cyan);
+    cursor: pointer;
+}
+.section-wrapper{
+    background-color: var(--dkbluem);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    max-width: 1440px;
+    width: 100%;
+    min-height: 900px;
+}
+@media screen and ( max-width: 375px){
+    .section-wrapper{
+        min-height: 100vh;
+        padding: 35px 20px;
+    }
+}
+.card-container{
+    display: flex;
+    flex-direction: column;
+    width: 317px;
+    height: auto;
+    background-color: var(--dkbluec);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow:8px 8px 25px rgba(7, 6, 20, 0.548); 
+    
+}
+.card-container h1:hover{
+    transition: .75s;
+    color: var(--cyan);
+    cursor: pointer;
+}
+.equilibrium-main-image{
+    background-image: url(images/image-equilibrium.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 7px;
+    width: 100%;
+    height: 275px;
+    transition: .75s;
+   
+}
+.equilibrium-main-image:hover{
+    background-image: url(images/overlaybackground.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 7px;
+    width: 100%;
+    height: 275px;
+    
+    
+    
+
+}
+.card-inner{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 20px 0;
+
+}
+.left-div{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+}
+.left-div img{
+    margin-right: 5px;
+}
+.right-div{
+    display: flex;
+    flex-direction: row;
+    width: 31%;
+
+}
+.right-div img{
+    margin-right: 5px;
+
+}
+.border-bottom{
+    border: solid 1px hsl(215, 32%, 27%);
+}
+.bottom-row{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+.avatar{
+    background-image: url(images/image-avatar.png);
+    background-position: center;
+    background-size: cover;
+    border: solid 1px hsl(0, 0%, 100%);
+    border-radius: 50%;
+    width: 1.875rem;
+    height: 1.875rem;
+    margin-right: 17px;
+}
+.light-blue{
+    color: var(--s-blue);
+}
+.heavy{
+    font-weight: 400;
+}
+
+.bright-blue{
+    color: var(--cyan);
+}
+img .svg-blue{
+    margin-right: 5px;
+}
